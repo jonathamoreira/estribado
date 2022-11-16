@@ -2,6 +2,20 @@
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 
+:root {
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Mulish", serif ;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
 body{
     background: #FFEFBA;
     background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA); 
@@ -13,23 +27,109 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(248, 151, 6, 0.842);
+    background-color: rgba(248, 151, 6, 0.726);
     width: 100%;
-    height: 5rem;
+    height: 3rem;
 }
 
 .menu-icon {
     display: flex;
     align-items: center;
+    font-family: var(--font-primary);
     padding-left: 1rem;
     font-size: 2rem;
 }
 
 .menu {
     display: flex;
+    margin-right: 2rem;
 }
 
 ul{
     display: flex;
     align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    display: flex;
+    margin-left: 2rem;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: zoom 4s;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.lascado {
+    font-family: var(--font-action);
+    font-size: 4rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.ajustando{
+    font-family: var(--font-action);
+    font-size: 4rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.investindo{
+    font-family: var(--font-action);
+    font-size: 4rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.rodapé{
+    display: flex;
+    background-color: #eee;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    text-align: center;
+}
+.social-media {
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+.social-media i:hover{
+    background-color: rgba(248, 151, 6, 0.842);
 }
