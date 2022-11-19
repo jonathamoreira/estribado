@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,10 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>Estribado</title>
 </head>
+
 <body>
     <section class="home" id="home">
-        <header>           
+        <header>
             <div class="menu-icon">Cuide do seu futuro!</div>
 
             <div class="menu">
@@ -28,15 +30,58 @@
         <div class="img-wrapper">
             <img src="imagens/Home-money.jpg" alt="varias cédulas de dinheiro">
         </div>
-
         <div class="intro">
             <h1>Organização e Controle!</h1>
+            <br>
+            <p>Se uma pessoa adquire a atitude correta em relação ao dinheiro,<br>
+                isso ajudará a endireitar quase todas as outras áreas de
+                sua vida.“ - <strong>Graham</strong>.</p>
         </div>
+        <div class="container">
+            <div class="header">
+                <h2>Preciso me organizar!</h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="username" placeholder="digite seu usuário">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="digite seu email">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="digite uma senha">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password-confirmation">Confirmação de Senha</label>
+                    <input type="password" id="password-confirmation" placeholder="confirme sua senha">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <!--Formulário de cadastro-->
     </section>
 
-    <section class="lascado" id="lasc">Lascado
-       
-
+    <section class="lascado" id="lasc">
+        <h1>Lascado</h1>
     </section>
 
     <section class="ajustando" id="ajus">Ajustando
@@ -52,7 +97,7 @@
         </div>
 
     </section>
-    <footer class="rodapé">
+    <footer>
         <div class="social-media">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-github-alt"></i></a>
@@ -65,4 +110,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
